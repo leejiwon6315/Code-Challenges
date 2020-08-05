@@ -1,6 +1,5 @@
 import "./styles.css";
 const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
-
 const textHello = document.querySelector("h2");
 const currentColor = textHello.style.color;
 
@@ -36,3 +35,4 @@ textHello.addEventListener("mouseover", superEventHandler.mouseOverFn);
 textHello.addEventListener("mouseleave", superEventHandler.mouseLeaveFn);
 window.addEventListener("contextmenu", superEventHandler.rightClickFn);
 window.addEventListener("resize", superEventHandler.windowResizeFn);
+
