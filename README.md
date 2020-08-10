@@ -6,3 +6,4 @@
   - [Day 04 - Codesandbox Link](https://codesandbox.io/s/empty-blueprint-s0u5x?file=/index.html)
   - [Day 05 - Codesandbox Link](https://codesandbox.io/s/day-five-blueprint-fo17m?file=/index.html) 
   - [Day 06 - Codesandbox Link](https://codesandbox.io/s/day-six-blueprint-v21pz?file=/index.html)
+  - [Day 07 ~ 08 - Codesandbox Link](https://codesandbox.io/s/empty-blueprint-7k3rh?file=/index.html)
