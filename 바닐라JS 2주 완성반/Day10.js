@@ -37,6 +37,7 @@ function formula(char) {
 
 function reset() {
   panel.innerText = `0`;
+  inputFormula = ``;
 }
 
 function calculate() {
