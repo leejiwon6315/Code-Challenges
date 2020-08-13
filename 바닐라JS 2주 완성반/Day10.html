@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Day10.css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>JeeWon's Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <br />
+
+      <table id="calcButton">
+        <tr>
+          <td colspan="4">
+            <div id="jsPanel">
+              <h3>0</h3>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <button id="acButton" onclick="reset()">C</button>
+          </td>
+          <td>
+            <button class="regExpButton" onclick="formula('/')">/</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="add(1)">1</button></td>
+          <td><button onclick="add(2)">2</button></td>
+          <td><button onclick="add(3)">3</button></td>
+          <td>
+            <button class="regExpButton" onclick="formula('*')">x</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="add(4)">4</button></td>
+          <td><button onclick="add(5)">5</button></td>
+          <td><button onclick="add(6)">6</button></td>
+          <td>
+            <button class="regExpButton" onclick="formula('-')">-</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="add(7)">7</button></td>
+          <td><button onclick="add(8)">8</button></td>
+          <td><button onclick="add(9)">9</button></td>
+          <td>
+            <button class="regExpButton" onclick="formula('+')">+</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button id="zeroButton" onclick="add(0)">0</button>
+          </td>
+          <td><button onclick="add('.')">.</button></td>
+          <td>
+            <button id="resultButton" onclick="calculate()">=</button>
+          </td>
+        </tr>
+      </table>
+      <h3 id="historyTitle">HISTORY</h3>
+      <div id="jsCalcHistory" class="calcHistory"></div>
+
+      <script defer type="text/javascript" src="Day10.js"></script>
+    </div>
+  </body>
+</html>
