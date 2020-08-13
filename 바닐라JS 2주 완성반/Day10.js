@@ -10,9 +10,12 @@ let numCheck = true;
 function add(char) {
   numCheck = true;
 
-  if (inputFormula === ``) {
+  if (inputFormula === `` && char !== `.`) {
     panel.innerText = char;
     inputFormula += char;
+  } else if (inputFormula === `` && char === `.`) {
+    panel.innerText = 0 + char;
+    inputFormula += 0 + char;
   } else {
     panel.innerText += char;
     inputFormula += char;
@@ -41,7 +44,7 @@ function reset() {
 }
 
 function calculate() {
-  if (inputFormula === ``) {
+  if (inputFormula === `` || numCheck === false) {
   } else {
     const result = eval(inputFormula);
     panel.innerText = result;
